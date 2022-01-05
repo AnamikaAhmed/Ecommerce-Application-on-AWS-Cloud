@@ -1,0 +1,13 @@
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+    # print(event["queryStringParameters"]["user"])
+    # print("*************",event["queryStringParameters"]["user"])
+    return {"message":"User found",
+              'status': '200',    
+            'headers': {
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+        },"status":"true","data":{"id":"0F8JIqi4zwvb77FGz6Wt","lastName":"Fiedler","firstName":"Heinz-Georg","email":"heinz-georg.fiedler@example.com","title":"mr","picture":"https://randomuser.me/api/portraits/men/81.jpg"}}

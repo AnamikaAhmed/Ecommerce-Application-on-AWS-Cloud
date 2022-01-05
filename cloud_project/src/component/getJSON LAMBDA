@@ -1,0 +1,63 @@
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+  
+    val={
+     'message': "Users retrieved",
+    'status': '200'
+        }
+    print(val["message"])
+    return {
+    'message': "Users retrieved",
+    'status': '200',
+    'headers': {
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+        },
+    'data': [
+      {
+        'id': "0F8JIqi4zwvb77FGz6Wt",
+        'lastName': "Jaggi",
+        'firstName': "P",
+        'email': "heinz-georg.fiedler@example.com",
+        'title': "mr",
+        'picture': "https://mjajaj.s3.amazonaws.com/download+(1).jpeg"
+      }
+      ,
+       {
+        'id': "0P6E1d4nr0L1ntW8cjGU",
+        'picture': "https://mjajaj.s3.amazonaws.com/download+(2).jpeg",
+        'lastName': "Hughes",
+        'email': "katie.hughes@example.com",
+        'title': "miss",
+        'firstName': "Katie"
+      },
+      {
+        'id': "1Lkk06cOUCkiAsUXFLMN",
+        'title': "mr",
+        'lastName': "Aasland",
+        'firstName': "Vetle",
+        'picture': "https://mjajaj.s3.amazonaws.com/download+(3).jpeg",
+        'email': "vetle.aasland@example.com"
+      },
+      {
+        'id': "1OuR3CWOEsfISTpFxsG7",
+        'picture': "https://mjajaj.s3.amazonaws.com/download.jpeg",
+        'lastName': "Vasquez",
+        'email': "dylan.vasquez@example.com",
+        'title': "mr",
+        'firstName': "Dylan"
+      },
+      {
+        'id': "1pRsh5nXDIH3pjEOZ17A",
+        'lastName': "Vicente",
+        'title': "miss",
+        'firstName': "Margarita",
+        'email': "margarita.vicente@example.com",
+        'picture': "https://mjajaj.s3.amazonaws.com/images+(1).jpeg"
+      }
+    ]
+  }
+    
